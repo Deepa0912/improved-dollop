@@ -1,0 +1,26 @@
+# Day 4 – Sentence Transformers, Embeddings & Vector Search
+# Install with: pip install -r requirements.txt
+
+# Sentence Transformers (wraps HuggingFace Transformers for sentence-level embeddings)
+sentence-transformers>=2.7.0
+
+# FAISS – Facebook AI Similarity Search (CPU version, free & open-source)
+# For GPU acceleration, replace with: faiss-gpu
+faiss-cpu>=1.8.0
+
+# NumPy – numerical operations and array handling
+numpy>=1.26.0
+
+# Scikit-learn – cosine_similarity utility (optional but used in script 02)
+scikit-learn>=1.4.0
+
+# PyTorch – required by sentence-transformers (CPU build sufficient)
+# For GPU builds, visit: https://pytorch.org/get-started/locally/
+torch>=2.2.0
+
+# Core HuggingFace Transformers (pulled in by sentence-transformers automatically)
+transformers>=4.40.0
+tokenizers>=0.19.0
+
+# Optional: ChromaDB for built-in metadata filtering demo (Section 6 of day_4.md)
+# chromadb>=0.5.0
